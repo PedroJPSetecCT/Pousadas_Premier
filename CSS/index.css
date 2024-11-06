@@ -1,0 +1,43 @@
+body{
+    background-image:url(../IMG/v748-toon-107.jpg);
+    background-size: cover;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    background: linear-gradient(#9198e5 40%, white);
+    width: 10%;
+    height: 100%;
+}
+.itens-content{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:1.4em;
+    align-items: center;
+}
+.itens{
+    background-color: white;
+    border-radius: 7px;
+    width: 115px;
+    height: 60px;
+}
+.img-nav{
+    height: 25px;
+    width: 35px;
+}
+
+function showMore() {
+    if (article.className == "open") {
+      // ler menos
+      article.className = "";
+      button.innerHTML = "Show more"; // Mostrar mais
+    } else {
+      // ler mais
+      article.className = "open";
+      button.innerHTML = "Show less"; // Mostrar menos
+    }
+ }
+ const article = document.querySelector("#content");
